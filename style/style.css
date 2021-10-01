@@ -1,0 +1,261 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+body {
+  font-family: "$main-font-family", sans-serif;
+  background-color: #f6f2f2;
+}
+
+body a {
+  display: inline-block;
+}
+body .container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+header .header-content__nav {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+header .header-content {
+  max-width: 1250px;
+  margin: auto;
+  background-color: #313030;
+}
+header a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+header li {
+  padding: 38px 24px 28px 24px;
+}
+header li:hover {
+  background-color: #ff3f40;
+  cursor: pointer;
+}
+
+.organaisation {
+  margin: 110px auto;
+  padding: 110px 0;
+}
+
+.organaisation .organaisation__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.organaisation .organaisation__items-left-item {
+  width: 50%;
+  padding-left: 25px;
+}
+.organaisation .organaisation__items-left-item h2 {
+  font-size: 60px;
+  line-height: 72px;
+  margin-bottom: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.organaisation .organaisation__items-left-item p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #494848;
+  margin-bottom: 60px;
+}
+.organaisation .organaisation__items-left-item a {
+  background-color: #ff2d2d;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 14px 61px;
+  letter-spacing: 2px;
+}
+.organaisation .organaisation__items-left-item a:hover {
+  background-color: #ff2d2dce;
+}
+.organaisation .organaisation__items-left-item a:active {
+  background-color: #ff2d2d;
+}
+.organaisation .organaisation__items-right-item {
+  width: 50%;
+  padding: 24px 0 24px 48px;
+}
+.organaisation .organaisation__items-right-item iframe {
+  width: 100%;
+  box-shadow: 0 0 40px 25px #dddddd;
+}
+
+.service {
+  margin: auto;
+  padding: 110px 0;
+  background-color: white;
+}
+
+.service .service__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.service .service__items-left-item {
+  width: 50%;
+  padding: 25px 128px 0 0;
+}
+.service .service__items-left-item h2 {
+  font-size: 42px;
+  line-height: 55px;
+  margin-bottom: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.service .service__items-left-item p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #494848;
+  margin-bottom: 60px;
+}
+.service .service__items-left-item a {
+  background-color: white;
+  text-decoration: none;
+  color: #ff2d2d;
+  font-size: 18px;
+  border: 2px solid #ff2d2d;
+  border-radius: 5px;
+  text-align: center;
+  padding: 14px 61px;
+  letter-spacing: 2px;
+}
+.service .service__items-left-item a:hover {
+  background-color: #ff2d2dce;
+  color: white;
+}
+.service .service__items-left-item a:active {
+  background-color: #ff2d2d;
+  color: white;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+.service .service__items-right-item {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.service .service__items-right-item .service__items-card {
+  width: 50%;
+}
+.service .service__items-right-item .service__items-card .service__items-card-img {
+  padding: 0 24px 32px 0;
+}
+.service .service__items-right-item .service__items-card h3 {
+  padding-bottom: 16px;
+  color: #4c4c4c;
+}
+.service .service__items-right-item .service__items-card p {
+  color: #4c4c4c;
+  padding-bottom: 32px;
+}
+
+footer {
+  background-color: #313030;
+  color: #afafaf;
+}
+footer .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .footer-content .footer-content__text {
+  font-size: 16px;
+  padding: 42px 0;
+}
+footer .footer-content .footer-content__icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+footer .footer-content .footer-content__icons .footer-content__icons-img {
+  padding-right: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */

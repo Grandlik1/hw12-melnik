@@ -1,0 +1,33 @@
+header {
+    .header-content__nav {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-content {
+        max-width: 1250px;
+        margin: auto;
+        background-color: #313030;
+    }
+
+    a {
+        text-decoration: none;
+        display: inline-block;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    li {
+        padding: 38px 24px 28px 24px;
+    }
+
+    li:hover {
+        background-color: #ff3f40;
+        cursor: pointer;
+    }
+
+}

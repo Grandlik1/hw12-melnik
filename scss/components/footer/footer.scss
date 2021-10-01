@@ -1,0 +1,29 @@
+footer {
+    background-color: #313030;
+    color: #afafaf;
+
+
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .footer-content__text {
+            font-size: 16px;
+            padding: 42px 0;
+        }
+
+        .footer-content__icons {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+
+            .footer-content__icons-img {
+                padding-right: 24px;
+            }
+
+        }
+
+    }
+}
