@@ -91,6 +91,9 @@ select {
     scroll-behavior: auto !important;
   }
 }
+header {
+  padding-top: 32px;
+}
 header .header-content__nav {
   list-style: none;
   display: flex;
@@ -119,7 +122,7 @@ header li:hover {
 }
 
 .organaisation {
-  margin: 110px auto;
+  margin: 0 auto;
   padding: 110px 0;
 }
 
@@ -129,7 +132,6 @@ header li:hover {
 }
 .organaisation .organaisation__items-left-item {
   width: 50%;
-  padding-left: 25px;
 }
 .organaisation .organaisation__items-left-item h2 {
   font-size: 60px;
