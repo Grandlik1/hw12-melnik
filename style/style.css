@@ -1,19 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
-body {
-  font-family: "$main-font-family", sans-serif;
-  background-color: #f6f2f2;
-}
-
-body a {
-  display: inline-block;
-}
-body .container {
-  max-width: 1250px;
-  margin: 0 auto;
-}
-
 /* Указываем box sizing */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 *,
 *::before,
 *::after {
@@ -91,6 +78,45 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.get-in-touch .get-in-touch__title, .team .team__title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.get-in-touch .get-in-touch__title h3, .team .team__title h3 {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-size: 42px;
+}
+.get-in-touch .get-in-touch__title p, .team .team__title p {
+  max-width: 500px;
+  font-size: 16px;
+  color: #4c4c4c;
+}
+.get-in-touch .get-in-touch__title::after, .team .team__title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  border-bottom: 3px solid crimson;
+  margin-top: 32px;
+}
+
+body {
+  font-family: "$main-font-family", sans-serif;
+  background-color: #f6f2f2;
+}
+
+body a {
+  display: inline-block;
+}
+body .container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+body main {
+  overflow: hidden;
+}
+
 header {
   padding-top: 32px;
 }
@@ -177,6 +203,9 @@ header li:hover {
   background-color: white;
 }
 
+.service {
+  border-bottom: 1px solid grey;
+}
 .service .service__items {
   display: flex;
   flex-wrap: wrap;
@@ -236,6 +265,286 @@ header li:hover {
 .service .service__items-right-item .service__items-card p {
   color: #4c4c4c;
   padding-bottom: 32px;
+}
+
+.products {
+  background-color: white;
+  padding: 110px 0;
+}
+.products .products-item .products__title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.products .products-item .products__title h3 {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+.products .products-item .products__title p {
+  max-width: 500px;
+  text-align: center;
+  font-size: 16px;
+  color: #4c4c4c;
+}
+.products .products-item .products__title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  border-bottom: 3px solid crimson;
+  margin: 24px auto;
+}
+.products .products-item ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+.products .products-item ul li {
+  padding: 0 32px;
+  text-transform: uppercase;
+}
+.products .products-item ul li a {
+  text-decoration: none;
+  color: #4c4c4c;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+.products .products-item ul li a:hover {
+  color: #ff2d2d;
+}
+.products .products-item .products__images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+.products .products-item .products__images .products__images-img {
+  background-color: #f5f0dd;
+  height: 300.5px;
+  margin: 0 6px 6px;
+  width: 300.5px;
+}
+
+.team {
+  padding: 90px 0;
+  background-color: white;
+}
+.team .team__title {
+  margin-bottom: 64px;
+}
+.team .team__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team .team__items .team__items-left-card {
+  width: 320px;
+  margin-right: 70px;
+}
+.team .team__items .team__items-left-card .team__items-left-card-photo {
+  background-color: #f5f0dd;
+  width: 100%;
+  max-height: 450px;
+  height: 450px;
+}
+.team .team__items .team__items-right-card {
+  width: 68%;
+}
+.team .team__items .team__items-right-card .team__items-right-card-title {
+  margin-top: 32px;
+}
+.team .team__items .team__items-right-card .team__items-right-card-title h3 {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.team .team__items .team__items-right-card .team__items-right-card-title p {
+  max-width: 620px;
+  color: #7c7c7c;
+  margin-bottom: 24px;
+  line-height: 28px;
+}
+.team .team__items .team__items-right-card .team__items-right-card-title a {
+  text-decoration: none;
+  color: #333333;
+  padding-right: 16px;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.team .team__items .team__items-right-card .team__items-right-card-title a:hover {
+  color: red;
+}
+.team .team__items .team__items-right-card .team__items-right-card-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: -6px;
+}
+.team .team__items .team__items-right-card .team__items-right-card-items .team__items-right-card-item {
+  width: 25%;
+  max-width: 200px;
+  height: 312.5px;
+  max-height: 210px;
+  background-color: #f5f0dd;
+}
+.team .team__items .team__items-right-card .team__items-right-card-items .team__items-right-card-item:first-child {
+  position: relative;
+  width: 100%;
+}
+.team .team__items .team__items-right-card .team__items-right-card-items .team__items-right-card-item:first-child::after {
+  content: "SOKINA JUE";
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding-top: 8px;
+  height: 40px;
+  color: white;
+  background-color: #7a786e;
+  bottom: 0;
+}
+
+.distribution {
+  padding: 140px 0;
+  background-color: #f5f0dd;
+}
+.distribution .distribution__title {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.distribution .distribution__title h3 {
+  font-size: 42px;
+  font-weight: 700;
+  color: white;
+}
+.distribution .distribution__title p {
+  font-size: 16px;
+  color: white;
+}
+.distribution .distribution__input-email {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.distribution .distribution__input-email .email__input {
+  border: none;
+  border-radius: 6px;
+  padding: 32px 360px 32px 32px;
+  margin-right: 32px;
+  outline: none;
+}
+.distribution .distribution__input-email .email__button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 32px 60px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.distribution .distribution__input-email .email__button:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+
+.get-in-touch {
+  padding: 110px 0;
+  background-color: white;
+}
+.get-in-touch .get-in-touch__title {
+  margin-bottom: 64px;
+}
+.get-in-touch .get-in-touch__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+.get-in-touch .get-in-touch__items::after {
+  content: "";
+  position: absolute;
+  background: #2d2d2d;
+  width: 100vw;
+  height: 100%;
+  right: -100vw;
+  top: 0;
+}
+.get-in-touch .get-in-touch__items .get-in-touch__contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+.get-in-touch .get-in-touch__items .get-in-touch__contact-form form {
+  margin-right: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.get-in-touch .get-in-touch__items .get-in-touch__contact-form form .form-text input {
+  padding: 28px 200px 28px 54px;
+  max-width: 340px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e5e5e5;
+  margin-bottom: 32px;
+  outline: none;
+  color: #444444;
+}
+.get-in-touch .get-in-touch__items .get-in-touch__contact-form form .form-message {
+  width: 100%;
+}
+.get-in-touch .get-in-touch__items .get-in-touch__contact-form form .form-message textarea {
+  height: 250px;
+  background-color: #e5e5e5;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  padding: 32px 54px;
+  margin-bottom: 32px;
+  resize: none;
+  outline: none;
+  color: #444444;
+}
+.get-in-touch .get-in-touch__items .get-in-touch__contact-form form .send-message {
+  width: 100%;
+}
+.get-in-touch .get-in-touch__items .get-in-touch__contact-form form .send-message .button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  padding: 32px 0;
+  outline: none;
+  font-weight: 700;
+}
+.get-in-touch .get-in-touch__items .get-in-touch__contact-form form .send-message .button:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+.get-in-touch .get-in-touch__items .contact-info {
+  width: 30%;
+  background-color: #2d2d2d;
+  color: white;
+  padding-left: 70px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.get-in-touch .get-in-touch__items .contact-info h3 {
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.get-in-touch .get-in-touch__items .contact-info p {
+  max-width: 280px;
+  margin-bottom: 16px;
 }
 
 footer {

@@ -1,15 +1,20 @@
 .service {
     margin: auto;
     padding: 110px 0;
-    background-color: white;
+    background-color: $main-site-color;
+
+
 
 }
 
 .service {
+    border-bottom: 1px solid grey;
 
     .service__items {
         display: flex;
         flex-wrap: wrap;
+
+
     }
 
     .service__items-left-item {

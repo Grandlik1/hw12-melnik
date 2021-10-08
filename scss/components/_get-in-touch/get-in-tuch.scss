@@ -1,0 +1,134 @@
+.get-in-touch {
+    padding: 110px 0;
+    background-color: $main-site-color;
+
+
+
+
+
+
+
+
+    .get-in-touch__title {
+        @extend %__title;
+        margin-bottom: 64px;
+    }
+
+    .get-in-touch__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background: #2d2d2d;
+            width: 100vw;
+            height: 100%;
+            right: -100vw;
+            top: 0;
+
+        }
+
+
+
+        .get-in-touch__contact-form {
+
+            display: flex;
+            flex-wrap: wrap;
+            width: 70%;
+
+
+
+            form {
+                margin-right: 100px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .form-text input {
+                    padding: 28px 200px 28px 54px;
+                    max-width: 340px;
+                    font-size: 16px;
+                    border: none;
+                    border-radius: 6px;
+                    background-color: #e5e5e5;
+                    margin-bottom: 32px;
+                    outline: none;
+                    color: #444444;
+                }
+
+                .form-message {
+                    width: 100%;
+
+                    textarea {
+                        height: 250px;
+                        background-color: #e5e5e5;
+                        border: none;
+                        border-radius: 6px;
+                        width: 100%;
+                        padding: 32px 54px;
+                        margin-bottom: 32px;
+                        resize: none;
+                        outline: none;
+                        color: #444444;
+
+                    }
+                }
+
+                .send-message {
+                    width: 100%;
+
+
+
+
+                    .button {
+                        background-color: red;
+                        color: white;
+                        border: none;
+                        border-radius: 6px;
+                        width: 100%;
+                        padding: 32px 0;
+                        outline: none;
+                        font-weight: 700;
+
+                        &:hover {
+                            background-color: white;
+                            color: red;
+                            cursor: pointer;
+
+                        }
+
+
+                    }
+
+
+
+                }
+            }
+        }
+
+        .contact-info {
+            width: 30%;
+            background-color: #2d2d2d;
+            color: white;
+            padding-left: 70px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            h3 {
+                text-transform: uppercase;
+                margin-bottom: 24px;
+            }
+
+            p {
+                max-width: 280px;
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+}
