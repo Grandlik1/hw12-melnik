@@ -1,21 +1,60 @@
 body {
     font-family: "$main-font-family", sans-serif;
     background-color: #f6f2f2;
+    
 
 }
 
 body {
+
+
     a {
         display: inline-block;
     }
 
     .container {
-        max-width: 1250px;
+        max-width: $xll;
         margin: 0 auto;
+
+
     }
 
-    main {
-        overflow: hidden;
+
+
+
+}
+
+@media (max-width:$xll) {
+    .container {
+        width: $xl;
+    }
+
+}
+
+@media (max-width:$xl) {
+    .container {
+        width: $lg;
+    }
+
+}
+
+@media (max-width:$lg) {
+    .container {
+        width: $md;
+    }
+
+}
+
+@media (max-width:$md) {
+    .container {
+        width: $sm;
+    }
+
+}
+
+@media (max-width:$sm) {
+    .container {
+        width: $xs;
     }
 
 }

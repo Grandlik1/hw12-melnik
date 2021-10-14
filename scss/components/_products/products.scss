@@ -1,36 +1,10 @@
 .products {
-    background-color: $main-site-color;
-    padding: 110px 0;
-
+    @include bcg ($main-site-color);
 
     .products-item {
 
         .products__title {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            flex-direction: column;
-
-            h3 {
-                text-transform: uppercase;
-                margin-bottom: 16px;
-                font-size: 32px;
-            }
-
-            p {
-                max-width: 500px;
-                text-align: center;
-                font-size: 16px;
-                color: #4c4c4c;
-            }
-
-            &::after {
-                content: "";
-                display: block;
-                width: 100px;
-                border-bottom: 3px solid crimson;
-                margin: 24px auto
-            }
+            @include title(center, center);
         }
 
         ul {
@@ -38,6 +12,7 @@
             flex-wrap: wrap;
             justify-content: center;
             list-style: none;
+            padding: 0;
 
 
             li {

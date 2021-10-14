@@ -1,6 +1,5 @@
 .distribution {
-    padding: 140px 0;
-    background-color: #f5f0dd;
+    @include bcg (#f5f0dd);
 
     .distribution__title {
         text-align: center;
@@ -24,6 +23,7 @@
         justify-content: center;
 
         .email__input {
+            width: 70%;
             border: none;
             border-radius: 6px;
             padding: 32px 360px 32px 32px;
@@ -32,6 +32,7 @@
         }
 
         .email__button {
+            width: 25%;
             background-color: red;
             color: white;
             border: none;

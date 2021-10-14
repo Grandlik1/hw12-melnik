@@ -1,9 +1,5 @@
 .service {
-    margin: auto;
-    padding: 110px 0;
-    background-color: $main-site-color;
-
-
+    @include bcg ($main-site-color);
 
 }
 

@@ -1,0 +1,27 @@
+@mixin bcg ($bcg) {
+    background: $bcg;
+    padding: 110px 0;
+}
+
+@mixin title ($align, $text-align) {
+    @extend %__title;
+    align-items: $align;
+    margin: 48px 0;
+
+    p {
+        text-align: $text-align;
+    }
+
+}
+
+// @mixin button ($size, $bcg-color, $text-color ) {
+//     a {
+//         background-color: $bcg-color;
+//         padding: $size;
+//         color: $text-color;
+//         text-decoration: none;
+//         border-radius: 6px;
+//         font-size: 18px;
+
+//     }
+// }

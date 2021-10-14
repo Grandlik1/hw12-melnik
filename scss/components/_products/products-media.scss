@@ -1,0 +1,44 @@
+@media (max-width:$xll) {}
+
+@media (max-width:$xl) {}
+
+@media (max-width:$lg) {
+    .products {
+        .products-item {
+            .products__title {
+                h3 {
+                    font-size: 24px;
+                }
+            }
+
+            ul {
+                li {
+                    padding: 0 16px;
+                }
+            }
+
+            .products__images {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width:$md) {
+    .products {
+        .products-item {
+
+            .products__images {
+                margin-left: 0px;
+                margin-right: 0px;
+
+                .products__images-img {
+                    margin: 0 0 16px 0;
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:$sm) {}

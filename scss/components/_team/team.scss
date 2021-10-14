@@ -1,10 +1,9 @@
 .team {
-    padding: 90px 0;
-    background-color: $main-site-color;
+    @include bcg ($main-site-color);
+
 
     .team__title {
-        @extend %__title;
-        margin-bottom: 64px;
+        @include title(flex-start, left);
     }
 
     .team__items {
@@ -12,20 +11,21 @@
         flex-wrap: wrap;
 
         .team__items-left-card {
-            width: $content-width / 4 + 7px;
+            width: $content-width / 4;
             margin-right: 70px;
 
             .team__items-left-card-photo {
                 background-color: #f5f0dd;
                 width: 100%;
+                max-width: 300px;
                 max-height: 450px;
                 height: 450px;
+
             }
         }
 
         .team__items-right-card {
             width: 68%;
-
 
             .team__items-right-card-title {
                 margin-top: 32px;
@@ -74,25 +74,27 @@
                     height: $content-width / 4;
                     max-height: 210px;
                     background-color: #f5f0dd;
-
-                }
-
-                .team__items-right-card-item:first-child {
                     position: relative;
-                    width: 100%;
+                    margin-right: -8px;
 
-                    &::after {
-                        content: "SOKINA JUE";
-                        position: absolute;
-                        text-align: center;
-                        width: 100%;
-                        padding-top: 8px;
-                        height: 40px;
-                        color: white;
-                        background-color: #7a786e;
-                        bottom: 0;
+                    &:hover {
+                        &::after {
+                            content: "SOKINA JUE";
+                            position: absolute;
+                            text-align: center;
+                            width: 100%;
+                            padding-top: 8px;
+                            height: 40px;
+                            color: white;
+                            background-color: #7a786e;
+                            bottom: 0;
+                        }
+
                     }
+
                 }
+
+
             }
 
 

@@ -1,0 +1,23 @@
+@media (max-width:$lg) {
+    footer {
+        background-color: #313030;
+        color: #afafaf;
+
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            align-items: center;
+
+
+        }
+    }
+
+
+}
+
+@media (max-width:$md) {}
+
+@media (max-width:$sm) {}
